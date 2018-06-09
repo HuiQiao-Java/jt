@@ -40,6 +40,7 @@
         //注册模态框隐藏事件
         $("#myModal").on('hidden.bs.modal',  function() {
            $("#myModal").off('click');
+           $("#myModal").removeData('rowData');
         });
 
         var rowData = $("#myModal").data('rowData');
